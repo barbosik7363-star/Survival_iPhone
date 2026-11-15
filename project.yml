@@ -1,0 +1,22 @@
+name: SongBox
+options:
+  deploymentTarget:
+    iOS: "26.0"
+targets:
+  SongBox:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        includes: ["*.swift"]
+    info:
+      path: Info.plist
+      properties:
+        UILaunchScreen: {}
+        CFBundleDisplayName: Выживание
+        NSLocationWhenInUseUsageDescription: Показывать ваше положение и отметки на карте без интернета
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.survival.offline
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
